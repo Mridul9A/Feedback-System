@@ -48,7 +48,7 @@ npm install
 * Create a .env file in the backend/src directory with the following content:
 ```
 MONGO_URI=your-mongodb-connection-string
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://localhost:5173/
 PORT=5000
 ```
 4. Run the server:
@@ -75,6 +75,6 @@ Run the development server:
 ```
 npm run dev
 ```
-* The frontend will be running at http://localhost:3000.
+* The frontend will be running at http://localhost:5173/.
 
 
