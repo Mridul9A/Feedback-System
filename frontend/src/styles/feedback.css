@@ -1,0 +1,224 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* Feedback Container */
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Feedback Form */
+.submit-feedback {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.submit-feedback:hover {
+  transform: translateY(-4px);
+}
+
+.form-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 1rem;
+}
+
+.form-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: #fff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  background: #de6e32; /* Vibrant Blue */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #fff;
+  color: #de6e32;
+  border: 2px solid #de6e32;
+  border-radius: 16px;
+  transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #6c757d;
+}
+
+/* Alert Messages */
+.alert {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #3c763d;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #a94442;
+}
+
+/* Dashboard Section */
+.feedback-dashboard {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Feedback Table Styles */
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.feedback-table th {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.feedback-table td {
+  padding: 1.2rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+}
+
+.feedback-table tr:hover td {
+  background-color: #f1f8ff;
+}
+
+/* Category Tags */
+.category-tag {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #e0e5f2;
+  color: #333;
+  border: 1px solid #d1d8e2;
+}
+
+.category-tag.suggestion {
+  background-color: #cfe2f3;
+}
+
+.category-tag.bug {
+  background-color: #f8d7da;
+}
+
+.category-tag.feature {
+  background-color: #d4edda;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-container {
+    padding: 2rem;
+  }
+
+  .feedback-dashboard {
+    max-height: 50vh;
+  }
+
+  .submit-feedback {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .submit-feedback {
+    padding: 1.5rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.7rem;
+  }
+
+  .submit-button {
+    padding: 0.6rem 1.4rem;
+  }
+}
