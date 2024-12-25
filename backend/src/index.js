@@ -17,7 +17,6 @@ app.use(cors({
   credentials: false
 }));
 
-// Make sure these middleware are set up before your routes
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
